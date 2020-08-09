@@ -1,4 +1,3 @@
-require 'pry'
 def cipher(message, shift)
   decode = message.split('')
   decoded_message = ""
@@ -13,14 +12,13 @@ def cipher(message, shift)
     shift.times {letter = letter.next}
     decoded_message += letter
   end 
-  puts decoded_message   
-  
+  decoded_message   
 end  
 
 
 
-puts "What\'s the message?"
-message = gets.chomp
-puts "How much should we shift the message? (Numerically)"
-shift = gets.chomp.to_i
-cipher(message, shift)
+#puts "What\'s the message?"
+#message = gets.chomp
+#puts "How much should we shift the message? (Numerically)"
+#shift = gets.chomp.to_i
+#puts cipher(message, shift)
